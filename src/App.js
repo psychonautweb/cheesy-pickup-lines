@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import PickupLine from './components/PickupLine';
 
-function App() {
+const App = () => {
+  const [pickupLine, setPickupLine] = useState({
+    anime: null,
+    character: null,
+    quote: null,
+  });
+
+  const fetchPickupLine = async () => {
+    return await fetch('https://animechan.vercel.app/api/random').then(
+      (response) => response.json()
+    );
+  };
+
+  const generate = async () => {
+    setPickupLine(await fetchPickupLine());
+  };
+
+  useEffect(async () => {
+    setPickupLine(await fetchPickupLine());
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PickupLine pickupLine={pickupLine} />
+
+      <button onClick={generate}>Generate New Line</button>
     </div>
   );
-}
+};
 
 export default App;
