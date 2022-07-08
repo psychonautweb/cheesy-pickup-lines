@@ -5,15 +5,15 @@ import PickupLine from './components/PickupLine';
 
 const App = () => {
   const [pickupLine, setPickupLine] = useState({
-    anime: null,
-    character: null,
-    quote: null,
+    title: 'Cheesy',
+    id: null,
+    message: null,
   });
 
   const fetchPickupLine = async () => {
-    return await fetch('https://animechan.vercel.app/api/random').then(
-      (response) => response.json()
-    );
+    return await fetch(
+      'https://rest-api-pickup-lines.herokuapp.com/message/random'
+    ).then((response) => response.json());
   };
 
   const generate = async () => {
