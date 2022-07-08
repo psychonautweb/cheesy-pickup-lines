@@ -3,13 +3,13 @@ import React from 'react';
 const PickupLine = ({ pickupLine }) => {
   return (
     <div className="quote">
-      <div className="anime" title={pickupLine.title}>
-        {pickupLine.title}
+      <div className="title" title="Cheesy Pick Up Lines">
+        Cheesy Pick Up Lines
       </div>
       <blockquote>{pickupLine.message}</blockquote>
 
-      <div className="character" title={pickupLine.id}>
-        {pickupLine.id}
+      <div className="id" title={pickupLine.id}>
+        #{pickupLine.id}
       </div>
     </div>
   );

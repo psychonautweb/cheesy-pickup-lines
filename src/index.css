@@ -42,8 +42,8 @@ blockquote {
     color: var(--light);
 }
 
-.anime,
-.character {
+.title,
+.id {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     color: var(--light);
@@ -57,14 +57,14 @@ blockquote {
     white-space: nowrap;
 }
 
-.anime {
+.title {
     background-color: var(--secondary);
     font-weight: 400;
     transform: translate(-25%, 50%);
 
 }
 
-.character {
+.id {
     background-color: var(--primary);
     font-weight: 700;
     transform: translate(25%, 50%);
