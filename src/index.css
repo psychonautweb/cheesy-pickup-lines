@@ -95,3 +95,19 @@ button {
 button:hover {
     background-color: var(--secondary);
 }
+
+@media screen and (max-width: 800px) {
+    * {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    * {
+        padding: 1rem;
+    }
+
+    .title {
+        transform: none;
+    }
+}
