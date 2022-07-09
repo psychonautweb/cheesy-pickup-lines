@@ -17,11 +17,10 @@
 }
 
 body {
-    background-color: var(--light);
+    background: linear-gradient(155deg, rgba(185, 27, 27, 1) 0%, rgb(118 0 181) 100%);
 }
 
 .App {
-    background: linear-gradient(155deg, rgba(185, 27, 27, 1) 0%, rgb(118 0 181) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
