@@ -1,4 +1,6 @@
 :root {
+    overflow: hidden;
+
     --primary: #A84fff;
     --secondary: #d81e5b;
     --dark: #131a26;
@@ -18,6 +20,8 @@
 
 body {
     background: linear-gradient(155deg, rgba(185, 27, 27, 1) 0%, rgb(118 0 181) 100%);
+    overflow: hidden;
+    width: 100%;
 }
 
 .App {
@@ -113,5 +117,9 @@ button:hover {
 
     blockquote {
         font-size: 1.5rem;
+    }
+
+    .id {
+        transform: translate(-15%, 10%);
     }
 }
