@@ -1,7 +1,4 @@
 :root {
-    height: 100%;
-    overflow: hidden;
-
     --primary: #A84fff;
     --secondary: #d81e5b;
     --dark: #131a26;
@@ -19,6 +16,10 @@
     font-family: var(--font);
 }
 
+html {
+    height: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -28,7 +29,6 @@ body {
     padding: 1rem;
     background: linear-gradient(155deg, rgba(185, 27, 27, 1) 0%, rgb(118 0 181) 100%);
     overflow: hidden;
-    max-height: 95%;
     width: 100%;
     height: 100%;
 }
