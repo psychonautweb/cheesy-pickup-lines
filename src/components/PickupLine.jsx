@@ -6,7 +6,9 @@ const PickupLine = ({ pickupLine }) => {
       <div className="title" title="Cheesy Pick Up Lines">
         Cheesy Pick Up Lines
       </div>
-      <blockquote>{pickupLine.message}</blockquote>
+      <blockquote>
+        {!pickupLine.message ? 'Loading...' : pickupLine.message}
+      </blockquote>
 
       <div className="id" title={pickupLine.id}>
         #{pickupLine.id}
