@@ -7,6 +7,8 @@
 
     --font: 'Fira Sans', sans-serif;
     --font-quote: 'Fira Code', monospace;
+
+    overflow: hidden;
 }
 
 * {
@@ -28,7 +30,6 @@ body {
 
     padding: 1rem;
     background: linear-gradient(155deg, rgba(185, 27, 27, 1) 0%, rgb(118 0 181) 100%);
-    overflow: hidden;
     width: 100%;
     height: 100%;
 }
@@ -43,6 +44,7 @@ body {
 
 .quote {
     position: relative;
+    overflow: scroll;
 }
 
 blockquote {
@@ -54,6 +56,7 @@ blockquote {
     padding: 3rem;
     border-radius: 1.5rem;
     color: var(--light);
+    overflow: scroll;
 }
 
 .title,
