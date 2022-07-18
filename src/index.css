@@ -44,7 +44,6 @@ body {
 
 .quote {
     position: relative;
-    overflow: scroll;
 }
 
 blockquote {
@@ -56,7 +55,6 @@ blockquote {
     padding: 3rem;
     border-radius: 1.5rem;
     color: var(--light);
-    overflow: scroll;
 }
 
 .title,
