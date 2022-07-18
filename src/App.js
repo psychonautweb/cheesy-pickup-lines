@@ -20,8 +20,11 @@ const App = () => {
     setPickupLine(await fetchPickupLine());
   };
 
-  useEffect(async () => {
-    setPickupLine(await fetchPickupLine());
+  useEffect(() => {
+    const fetchPickupLineOnLoad = async () => {
+      setPickupLine(await fetchPickupLine());
+    };
+    fetchPickupLineOnLoad();
   }, []);
 
   return (
