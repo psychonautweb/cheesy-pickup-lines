@@ -10,7 +10,7 @@ Available Endpoints:
   url: 'https://cheesy-pick-up-lines.p.rapidapi.com/message        - summary
   
   method: GET,
-  url: https://cheesy-pick-up-lines.p.rapidapi.com/message/{ID - number}   - specify a number to get a message 
+  url: https://cheesy-pick-up-lines.p.rapidapi.com/message/{ID}   - specify a number(type) {ID} to get a message. E.G. 56
   
   method: 'GET',
   url: https://cheesy-pick-up-lines.p.rapidapi.com/message/random    - generate a random message 
