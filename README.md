@@ -7,12 +7,12 @@ https://rest-api-pickup-lines.herokuapp.com/ (API URL)
 Available Endpoints: 
 
   method: GET
-  url: 'https://cheesy-pick-up-lines.p.rapidapi.com/message        - summary
+  url: https://rest-api-pickup-lines.herokuapp.com/message        - summary
   
   method: GET,
-  url: https://cheesy-pick-up-lines.p.rapidapi.com/message/{ID}   - specify a number(type) {ID} to get a message. E.G. 56
+  url: https://rest-api-pickup-lines.herokuapp.com/message/{ID}   - specify a number(type) {ID} to get a message. E.G. 56
   
   method: 'GET',
-  url: https://cheesy-pick-up-lines.p.rapidapi.com/message/random    - generate a random message 
+  url: https://rest-api-pickup-lines.herokuapp.com/message/random    - generate a random message 
 
 *First time loading takes a couple of seconds to start the backend and fetch data from API - this is because of how Heroku Free plan works.
