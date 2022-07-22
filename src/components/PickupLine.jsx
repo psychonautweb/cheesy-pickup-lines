@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const PickupLine = ({ pickupLine }) => {
+  const [text, setText] = useState('');
+
+  const copy = async () => {
+    setText(document.querySelector('blockquote').textContent);
+    await navigator.clipboard.writeText(text);
+    alert('Text copied');
+  };
+
   return (
     <div className="quote">
       <div className="title" title="Cheesy Pick Up Lines">
@@ -13,6 +21,8 @@ const PickupLine = ({ pickupLine }) => {
       <div className="id" title={pickupLine.id}>
         #{pickupLine.id}
       </div>
+
+      <button onClick={copy}>Copy</button>
     </div>
   );
 };
