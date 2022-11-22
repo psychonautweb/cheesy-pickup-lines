@@ -2,8 +2,7 @@ Funny mini-project where I made a simple, really simple :), API in NodeJS(Expres
 
 https://cheesy-pickup-lines.onrender.com (Front-End)
 
-
-API Doesn't work anymore due to Heroku termination of free Dynos. I'll update this later when I switch to alternative platform.
+* API Doesn't work anymore due to Heroku termination of free Dynos. I'll update this later when I switch to alternative platform.
 
 
 https://rest-api-pickup-lines.herokuapp.com/ (API URL)
